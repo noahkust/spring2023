@@ -43,6 +43,8 @@ Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine alrea
 - Answered Questions and/or General notes
 - We refer to ROS programs as nodes, to help us remember that each program is just one piece of a much larger system.
 - ROS graph nodes represent a software module that is sending or receiving messages, and ROS graph edges represent a stream of messages between two nodes.
+- Packages are just locations in the filesystem.
+- roslaunch will automatically instantiate a roscore if one does not exist when roslaunch is invoked.
 
 ---
 
