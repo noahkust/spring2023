@@ -53,6 +53,11 @@ Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine alrea
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- A topic is a name for a stream of messages with a defined type.
+- Topics implement a publish/subscribe communication mechanism, one of the more common ways to exchange data in a distributed system.
+- In order to see a publishers messages, a subscriber will need the name of the topic, the message type of the topic, and the name of the callback function.
+- Use existing message types and SI units whenever possible.
+- A single node can have multiple publications and subscriptions.
 
 ---
 
