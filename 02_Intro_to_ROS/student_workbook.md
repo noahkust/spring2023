@@ -66,6 +66,10 @@ Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine alrea
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- Services are just synchronous remote procedure calls; they allow one node to call a function that executes in another node.
+- The simplest way to use a service is to call it using the rosservice command.
+- We can subscribe to topics that are not yet advertised, but we can only use advertised services.
+- If you omit arguments that the service needs to run, you might get strange return values.
 
 ---
 
@@ -74,6 +78,12 @@ Just read this chapter...**DO NOT INSTALL ANYTHING**. Your virtual machine alrea
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- While services are synchronous, actions are asynchronous.
+- Similar to the request and response of a service, an action uses a goal to initiate a behavior and sends a result when the behavior is complete.
+- The action further uses feedback to provide updates on the behavior’s progress toward the goal and also allows for goals to be canceled.
+- Actions are themselves implemented using topics.
+- The first step in creating a new action is to define the goal, result, and feedback message formats in an action definition file.
+- While service definitions have two parts (request and response), action definitions have three parts (goal, result, and feedback).
 
 
 ---
