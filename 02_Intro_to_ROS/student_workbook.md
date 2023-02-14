@@ -1,5 +1,5 @@
-- Name:  *write your full name*
-- Date:  *write the date of submission*
+- Name: Noah Kustyn
+- Date: 2/14/2023
 
 
 # Introduction to ROS -- Self Study
@@ -100,6 +100,10 @@ This tutorial introduces ROS filesystem concepts, and covers using the `roscd`, 
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- rospack allows you to get information about packages.
+- roscd allows you to change directory directly to a package or a stack.
+- roscd can also move to a subdirectory of a package or stack.
+- rosls allows you to list directly in a package by name rather than by absolute path.
 
 
 ### 2)  [Creating a ROS Package](http://wiki.ros.org/ROS/Tutorials/CreatingPackage)
@@ -116,6 +120,10 @@ This tutorial covers using catkin to create a new package, and rospack to list p
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- The package must contain a catkin compliant package.xml file.
+- The package must contain a CMakeLists.txt which uses catkin.
+- Each package must have its own folder
+- You can customize a package by updating the description tag, maintainer tag, license tag, and dependencies tag.
 
 
 				
@@ -132,6 +140,10 @@ This tutorial covers using catkin to create a new package, and rospack to list p
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- Note that catkin_make first displays what paths it is using for each of the 'spaces'.
+- The build folder is the default location of the build space and is where cmake and make are called to configure and build your packages.
+- The devel folder is the default location of the devel space, which is where your executables and libraries go before you install your packages.
+
 
 
 ### 4)  [Understanding ROS Nodes](http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes)
@@ -147,6 +159,11 @@ This tutorial introduces ROS graph concepts and discusses the use of `roscore`, 
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- ROS nodes use a ROS client library to communicate with other nodes.
+- Nodes can publish or subscribe to a Topic and provide or use a Service.
+- rosrun allows you to use the package name to directly run a node within a package.
+- rosnode is a ROS tool which gives information about a node.
+
 
 
 ### 5) [Understanding ROS Topics](http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
@@ -164,6 +181,11 @@ This tutorial introduces ROS topics as well as using the rostopic and rqt_plot c
 - Unanswered Questions:
 	
 - Answered Questions and/or General notes
+- rostopic echo shows the data published on a topic.
+- rostopic list returns a list of all topics currently subscribed to and published.
+- Communication on topics happens by sending ROS messages between nodes.
+- The type of the message sent on a topic can be determined using rostopic type.
+- rostopic pub publishes data on to a topic currently advertised.
 
 
 ### 6)  [Understanding ROS Services and Parameters](http://wiki.ros.org/ROS/Tutorials/UnderstandingServicesParams)
